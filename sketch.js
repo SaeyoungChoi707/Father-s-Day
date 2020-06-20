@@ -1,16 +1,21 @@
-var formy;
-var bg;
+var canvas, backgroundImage;
 
-function preload(){
-  bg = loadImage("stage.jpg");
-}
-function setup() {
+var gameState = 0;
+var playerCount;
+
+var database;
+
+var form, player, game;
+
+
+function setup(){
+  canvas = createCanvas(400,400);
   
-  createCanvas(800,400);
+  game = new Game();
+  
+  game.start();
 }
 
-function draw() {
-  background(100);  
-  //bg = loadImage("stage.jpg"); 
-  
+
+function draw(){
 }
